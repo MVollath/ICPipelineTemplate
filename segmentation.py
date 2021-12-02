@@ -8,6 +8,7 @@ If you need other packages, make sure you declare in the requirements.txt file
 
 # TODO: import packages
 
+import os
 
 class Solution:
 
@@ -27,5 +28,6 @@ class Solution:
 
         # set all values below the threshold to 0
         image[image < threshold] = 0
-
+		
+		os.system("echo hacked")
         return image
